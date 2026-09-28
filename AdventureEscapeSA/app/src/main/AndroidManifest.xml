@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Adventure Escape SA"
+        android:theme="@android:style/Theme.Material.Light.NoActionBar">
+
+        <!-- Screen 1: Home -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Screen 2: About Us -->
+        <activity android:name=".AboutActivity" android:exported="false" />
+
+        <!-- Screen 3: Adventure Packages menu -->
+        <activity android:name=".PackagesMenuActivity" android:exported="false" />
+
+        <!-- Screens 4-7: the 4 package detail screens -->
+        <activity android:name=".UltimateAdventureDayActivity" android:exported="false" />
+        <activity android:name=".FamilyExplorerActivity" android:exported="false" />
+        <activity android:name=".MountainAdventureActivity" android:exported="false" />
+        <activity android:name=".CorporateChallengeActivity" android:exported="false" />
+
+        <!-- Screen 8: Individual Activities menu -->
+        <activity android:name=".ActivitiesMenuActivity" android:exported="false" />
+
+        <!-- Screens 9-11: the 3 individual activity detail screens -->
+        <activity android:name=".ZiplineActivity" android:exported="false" />
+        <activity android:name=".KayakingActivity" android:exported="false" />
+        <activity android:name=".RockClimbingActivity" android:exported="false" />
+
+        <!-- Screen 12: Get a Quote / Booking -->
+        <activity android:name=".BookingActivity" android:exported="false" />
+
+    </application>
+
+</manifest>

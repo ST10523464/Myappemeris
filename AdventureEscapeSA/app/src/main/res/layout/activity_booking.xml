@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get a Quote"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Step 1: Choose what you want to book" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/radioUltimate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ultimate Adventure Day - R1500"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioFamily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Family Explorer Package - R1500" />
+
+            <RadioButton
+                android:id="@+id/radioMountain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mountain Adventure Package - R1500" />
+
+            <RadioButton
+                android:id="@+id/radioCorporate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Corporate Team Challenge - R1500" />
+
+            <RadioButton
+                android:id="@+id/radioZiplining"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ziplining Adventure - R750" />
+
+            <RadioButton
+                android:id="@+id/radioKayaking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kayaking Experience - R500" />
+
+            <RadioButton
+                android:id="@+id/radioRockClimbing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rock Climbing Session - R500" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Step 2: How many bookings? (This decides your discount)" />
+
+        <EditText
+            android:id="@+id/editNumberOfBookings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="e.g. 1, 2, 3, 4..." />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Calculate My Quote" />
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Back to Home" />
+
+    </LinearLayout>
+</ScrollView>
